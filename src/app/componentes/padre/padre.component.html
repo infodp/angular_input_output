@@ -1,0 +1,32 @@
+<!-- Para ejemplo con Input -->
+<!-- <div class="card">
+    <div class="card-header bg-dark text-white">
+      Componente PADRE
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Títiulo</h5>
+      <app-hijo [data]="dataPadre"></app-hijo>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> -->
+
+  <div class="card mt-5">
+    <div class="card-header bg-dark text-white">
+      Componente PADRE
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Colores</h5>
+
+        <ul class="list-group">
+            <li *ngFor="let color of arregloColores" class="list-group-item">
+                 {{color}}
+            </li>            
+        </ul>
+
+      <app-hijo
+        (eventoEnviarData)="agregarAlArreglo($event)"
+      >
+
+      </app-hijo>
+    </div>
+  </div>

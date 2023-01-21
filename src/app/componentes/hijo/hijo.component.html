@@ -1,0 +1,16 @@
+<!-- Para ejemplo con Input -->
+
+<!-- <div class="alert alert-info" role="alert">
+    <strong>Comp. HIJO - {{data}} </strong>
+</div> -->
+
+<div class="input-group mt-4">
+    <input #valores type="text" class="form-control">
+    <button
+        (click)="enviarData(valores.value)"
+        class="btn btn-info"
+        type="button"
+    >
+        Enviar Data
+    </button>
+</div>
